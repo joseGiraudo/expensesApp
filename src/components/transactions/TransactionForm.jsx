@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useGlobalState } from '../context/GlobalState';
+import { useGlobalState } from '../../context/GlobalState';
 
 const TransactionForm = () => {
 
@@ -12,7 +12,9 @@ const TransactionForm = () => {
         e.preventDefault();
         console.log(description, amount);
         addTransaction({
-            id: 1, description, amount
+            id: window.crypto.randomUUID(),
+            description,
+            amount: +amount // el + sirve para convertirlo a int
         });
 
     }
