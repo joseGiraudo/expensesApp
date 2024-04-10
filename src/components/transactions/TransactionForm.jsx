@@ -22,7 +22,7 @@ const TransactionForm = () => {
     }
 
   return (
-    <div>
+    <div className='py-5'>
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Enter a description"
                 onChange={(e) => setDescription(e.target.value)}

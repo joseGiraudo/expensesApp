@@ -7,7 +7,7 @@ const TransactionList = () => {
 
   return (
     <>
-      <h3 className="text-slate-300 text-xl font-bold w-full">History</h3>
+      <h3 className="text-slate-300 text-xl py-1 font-bold w-full">History</h3>
       <ul className="">
         {
           transactions.map(tr => (
