@@ -16,10 +16,10 @@ function App() {
             <div className=''>
               <Header />
               <Balance />
-            </div>
-            <div className=''>
               <TransactionForm />
               <TransactionList />
+            </div>
+            <div className=''>
               <ExpenseChart />
             </div>
           </div>                    
