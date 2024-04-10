@@ -15,12 +15,12 @@ const Balance = () => {
     const totalOutcomes = outcomes.reduce((acc, item) => (acc += item), 0);
 
   return (
-    <div>
-        <div>Balance: ${total}</div>
+    <div className='flex justify-between'>
         <div>
             <h5>Incomes: ${totalIncomes}</h5>
             <h5>Outcomes: ${totalOutcomes}</h5>
         </div>
+        <div className='text-xl font-bold'>Balance: ${total}</div>
     </div>
   )
 }
