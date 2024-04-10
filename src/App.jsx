@@ -18,7 +18,7 @@ function App() {
               <TransactionForm />
               <TransactionList />
             </div>
-            <div className='py-5'>
+            <div className='py-5 text-center'>
               <Balance />
               <ExpenseChart />
             </div>
